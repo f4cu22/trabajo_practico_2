@@ -1,5 +1,12 @@
 package ar.edu.unju.fi.ejercicio2.model;
-
+/**
+*Clase Efemeride del paquete model que representa
+*los datos de la efemeride para un menu
+*
+*@author Alavar, Facundo Nicolás
+*@version 1.0
+*
+*/
 import ar.edu.unju.fi.ejercicio2.constantes.Mes;
 
 public class Efemeride {
