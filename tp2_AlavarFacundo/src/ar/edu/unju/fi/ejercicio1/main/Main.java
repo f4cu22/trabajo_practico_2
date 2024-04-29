@@ -140,9 +140,9 @@ public class Main {
 	    		scanner.nextLine();//limpia buffer de entrada	    	
 	    		}
 	    }
-	    
+	    boolean estado=false;
 	    //crear el producto y agregarlo a la lista
-	    Producto producto = new Producto(codigo, descripcion, precioUnitario, origenFabricacion, categoria);
+	    Producto producto = new Producto(codigo, descripcion, precioUnitario, origenFabricacion, categoria,estado);
 	    productos.add(producto);
 	    System.out.println("Producto agregado exitosamente. ");  
 	}

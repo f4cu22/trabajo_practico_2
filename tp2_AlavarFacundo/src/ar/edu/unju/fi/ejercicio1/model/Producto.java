@@ -14,6 +14,7 @@ public class Producto {
 	private double precioUnitario;
 	private OrigenFabricacion origenFabricacion;
 	private Categoria categoria;
+	private boolean estado;
 	
 	public enum OrigenFabricacion{
 		ARGENTINA,CHILE,BRASIL,URUGUAY;
@@ -33,15 +34,31 @@ public class Producto {
 	 * @param categoria
 	 */
 	public Producto(String codigo, String descripcion, double precioUnitario, OrigenFabricacion origenFabricacion,
-			Categoria categoria) {
+			Categoria categoria,boolean estado) {
 		super();
 		this.codigo = codigo;
 		this.descripcion = descripcion;
 		this.precioUnitario = precioUnitario;
 		this.origenFabricacion = origenFabricacion;
 		this.categoria = categoria;
+		this.estado = estado;
 	}
-
+	//getters y setters
+	
+	/*
+	 * @return the estado 
+	 */
+	public boolean getEstado() {
+		return estado;
+	}
+	
+	/*
+	 * @param estado the estado to set
+	 */
+	public void setEstado(boolean estado) {
+		this.estado = estado;
+	}
+	
 	/**
 	 * @return the codigo
 	 */

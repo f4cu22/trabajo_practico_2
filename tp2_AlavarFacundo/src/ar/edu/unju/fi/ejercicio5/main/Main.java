@@ -3,6 +3,7 @@ package ar.edu.unju.fi.ejercicio5.main;
 import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Scanner;
+import java.util.function.Consumer;
 
 import ar.edu.unju.fi.ejercicio1.model.Producto;
 import ar.edu.unju.fi.ejercicio1.model.Producto.Categoria;
@@ -13,7 +14,7 @@ public class Main {
 	public static void main(String[] args) {
 		//Precargar productos
 		ArrayList<Producto> productos = new ArrayList<>();
-		productos.add(new Producto("COD001","HELADERA",101.1,OrigenFabricacion.ARGENTINA,Categoria.ELECTRHOGAR));
+		productos.add(new Producto("COD001","HELADERA",101.1,OrigenFabricacion.ARGENTINA,Categoria.ELECTRHOGAR,true));
 		
 		Scanner scanner = new Scanner(System.in);
 		int opcion;
@@ -21,7 +22,7 @@ public class Main {
 			try {
 				opcion=scanner.nextInt();
 				switch(opcion) {
-				case 1:
+				case 1:mostrarProductos(productos);
 					break;
 				case 2:
 					break;
@@ -37,6 +38,11 @@ public class Main {
 			}
 		}while(opcion!=3);
 
+	}
+	
+	private static void mostrarProductos(ArrayList<Producto>productos) {
+		Consumer<Producto> printConsumer = p-> System.out.println(p);
+		productos.forEach(printConsumer);
 	}
 
 }
