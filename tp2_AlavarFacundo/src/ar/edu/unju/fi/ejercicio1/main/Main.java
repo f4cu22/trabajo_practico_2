@@ -140,7 +140,6 @@ public class Main {
 	    		scanner.nextLine();//limpia buffer de entrada	    	
 	    		}
 	    }
-	    
 	    //crear el producto y agregarlo a la lista
 	    Producto producto = new Producto(codigo, descripcion, precioUnitario, origenFabricacion, categoria);
 	    productos.add(producto);
