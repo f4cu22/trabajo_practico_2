@@ -1,5 +1,11 @@
 package ar.edu.unju.fi.ejercicio5.model;
-
+/**
+*Clase model que representa el pago en tarjeta 
+*
+*@author Alavar, Facundo Nicolás
+*@version 1.0
+*
+*/
 import java.time.LocalDate;
 
 import ar.edu.unju.fi.ejercicio5.interfaces.Pago;

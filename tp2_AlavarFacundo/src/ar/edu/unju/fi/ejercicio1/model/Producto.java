@@ -27,12 +27,23 @@ public class Producto {
 	
 	
 	/**
+	 * Constructor de ejercicio 1
 	 * @param codigo
 	 * @param descripcion
 	 * @param precioUnitario
 	 * @param origenFabricacion
 	 * @param categoria
 	 */
+	public Producto(String codigo, String descripcion, double precioUnitario, OrigenFabricacion origenFabricacion,
+			Categoria categoria) {
+		super();
+		this.codigo = codigo;
+		this.descripcion = descripcion;
+		this.precioUnitario = precioUnitario;
+		this.origenFabricacion = origenFabricacion;
+		this.categoria = categoria;;
+	}
+	//Constructor usado en ejercicio 5
 	public Producto(String codigo, String descripcion, double precioUnitario, OrigenFabricacion origenFabricacion,
 			Categoria categoria,boolean estado) {
 		super();
